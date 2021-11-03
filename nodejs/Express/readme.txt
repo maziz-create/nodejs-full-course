@@ -9,6 +9,11 @@ ayrı ayrı isteklerde bulunuyor olması. Bu istekleri karşılayacak fonksiyonu
 dosya okunup onun da serve edilmesi gerekiyor. İşte express burada yardımımıza koşuyor. Ayrıca built-in
 olarak gelen routing yapısı da mevcut.
 
-
+Pug nedir? (Eski adı ile Jade)
+Express ile html yanıtları dönüyoruz ya hani. Pug sayesinde bunu çok daha basit yapabiliyoruz.
+Mesela res.send("<div>hello</div>") yazımızı   div hello    olarak yazabiliyoruz.
+Ayrıca if else yapısını da kullanabiliyoruz.
+Ayrıca forEach gibi döngüleri kullanabiliyoruz.
+Ayrıca bir dosyayı başka bir dosyada include edebiliyoruz.
 
 
