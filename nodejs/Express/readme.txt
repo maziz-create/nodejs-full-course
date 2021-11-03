@@ -9,6 +9,12 @@ ayrı ayrı isteklerde bulunuyor olması. Bu istekleri karşılayacak fonksiyonu
 dosya okunup onun da serve edilmesi gerekiyor. İşte express burada yardımımıza koşuyor. Ayrıca built-in
 olarak gelen routing yapısı da mevcut.
 
+Express statik klasör belirlemek nedir?
+Hatırlarsak express olmadan nodejs kullandığımızda sayfaya eklenilen her link ve script için
+nodejs tarafında her bir dosya için karşılama fonksiyonu yazıp ayrı serve etmemiz gerekiyordu.
+Express ile buna gerek kalmayacak demiştik. İşte bunun için statik klasör belirleyip 
+oradan hallediyoruz bu işleri.
+
 Pug nedir? (Eski adı ile Jade)
 Express ile html yanıtları dönüyoruz ya hani. Pug sayesinde bunu çok daha basit yapabiliyoruz.
 Mesela res.send("<div>hello</div>") yazımızı   div hello    olarak yazabiliyoruz.
