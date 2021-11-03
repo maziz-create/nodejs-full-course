@@ -33,3 +33,11 @@ Evet. res.render('pugDosyaIsmi', { degisken: 'degeri' });
 
 Bir pug dosyasını bir başka pug dosyasına include etmek mümkün mü?
 Evet.
+
+
+Middleware nedir?
+Request yapıldıktan sonra respond dönmeden önce arada yapılması istenilen işler olabilir.
+Mesela kullanıcı giriş yapmış mı?
+Bunun kontrolünü basit bir şekilde gerekli route dosyasının içinde de yapabiliriz fakat
+yüzlerce route/sayfa olduğunu düşünürsek bi hayli zordur. Bu yüzden app.js içerisinde yapmak 
+daha mantıklı. app.use(callbackFn) şeklinde yazılabilir.
