@@ -16,4 +16,8 @@ Ayrıca if else yapısını da kullanabiliyoruz.
 Ayrıca forEach gibi döngüleri kullanabiliyoruz.
 Ayrıca bir dosyayı başka bir dosyada include edebiliyoruz.
 
+Pug dosyası nasıl üretilir, okunur?
+Pug dosyaları kök dizinde 'views' klasörü altında dosyaismi.pug olarak üretilmelidir. Daha sonra
+express ile app.set('view engine', 'pug');
+
 
