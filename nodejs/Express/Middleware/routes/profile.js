@@ -1,7 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', (req, res) => {
+//helpers
+const isLogin = require('../helper/isLogin');
+
+//not: başka middleware varsa parametre olarak verilebilir.
+router.get('/', isLogin, (req, res) => {
     res.send("Profile sayfası get methodu!");
     res.end();
 });
