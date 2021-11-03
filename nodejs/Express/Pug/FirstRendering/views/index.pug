@@ -1,6 +1,50 @@
 html
     head
         title merhaba pug
+    //açıklama satırı!
+
+    // pug içerisinde değişken tanımlamak: 
+    - var degisken1 = 'ilk degisken'
+    - var degisken2 = 'iKİNCİ degiSKen'
+    - var degisken3 = 'üçüncü degisken'
+    //nasıl kullanacağız? expressten gelmiş gibi kullanılabilir.
+    hr
+    =degisken1.toUpperCase()
+    br
+    | toUpperCase() kullanıldı!
+    br
+    br
+    =degisken2.toLowerCase()
+    br
+    | toLowerCase kullanıldı!
+    br
+    br
+    //yazı yazarkenki kullanım
+    | #{degisken3} => bu şekil kullanımda fonksiyon kullanılamıyor.
+    br
+    hr
+
+    //pug içerisinde if nasıl kullanılır?
+    hr
+    - var sayi;
+    if !sayi
+        | sayı yok!
+    else if sayi == 12 
+        | sayı 12
+    else
+        | sayı 12den farklı.
+    hr
+
+    //pug içerisinde döngü nasıl kullanılır?
+    hr
+    ul
+        each val in ['selam',2,3,4,5]
+             li= val       
+    hr
+
 
     body 
         span(style="color: #fff; background-color: #333;") Merhaba Pug  
+        br
+        include footer.pug
+        br

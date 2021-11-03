@@ -15,9 +15,15 @@ Mesela res.send("<div>hello</div>") yazımızı   div hello    olarak yazabiliyo
 Ayrıca if else yapısını da kullanabiliyoruz.
 Ayrıca forEach gibi döngüleri kullanabiliyoruz.
 Ayrıca bir dosyayı başka bir dosyada include edebiliyoruz.
+Not: pug için block ve layout şeylerini eklemedim kafa karıştırıcı olabilir diye. Zaten bolca 
+kullanılması gerekiliyormuş express + pug ile proje yapılırken.
 
 Pug dosyası nasıl üretilir, okunur?
 Pug dosyaları kök dizinde 'views' klasörü altında dosyaismi.pug olarak üretilmelidir. Daha sonra
 express ile app.set('view engine', 'pug');
 
+Pug dosyasına express içerisinden değişken gönderebiliyor muyuz?
+Evet. res.render('pugDosyaIsmi', { degisken: 'degeri' });
 
+Bir pug dosyasını bir başka pug dosyasına include etmek mümkün mü?
+Evet.
