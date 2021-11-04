@@ -19,3 +19,10 @@ Fakat ilişkilerin çok önemli olduğu sistemlere No-SQL yapısının kullanıl
 
 MongoDB Collection nedir?
 İlişkisel veritabanlarındaki (SQL, MSSQL) tablolar. Users tablosu mesela.
+
+MongoDB Best Practices!
+- Bir array içinde mesajlar göndereceksin mesela. İlgili modelin Schema'sını hazırlarken eğer
+Array[], olarak tanımlarsan mesajlar kaydolur
+fakat eğer
+Array[{message: String}], olarak tanımlarsan eğer her bir mesaja unique bir _id ataması yapar
+ve sen de istediğin zaman mesajın bu id değerini kullanabilirsin.
