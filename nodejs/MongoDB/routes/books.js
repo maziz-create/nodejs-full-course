@@ -24,4 +24,14 @@ router.get('/', (req, res, next) => {
     });
 });
 
+//sorgu yazacağız.
+//'comments title' => sadece comments ve title alanları gelsin.
+//
+router.get('/search', (req, res) => {
+    Book.find({ title: 'Esaretin Bedeli' }, 'title comments', (err, data) => {
+        if(err) console.log("Sorgu hatası! ", err);
+        res.json(data);
+    });
+});
+
 module.exports = router;
